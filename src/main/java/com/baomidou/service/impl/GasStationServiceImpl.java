@@ -47,13 +47,10 @@ public class GasStationServiceImpl extends ServiceImpl<GasStationMapper, GasStat
             gasstation.setPriceOfLpg(report.getPriceOfLpg());
             gasstation.setPriceOfDiesel(report.getPriceOfDiesel());
             gasstation.setPriceOfMethan(report.getPriceOfMethan());
-            gasstation.setLatitude(report.getLatitude());
-            gasstation.setLongitude(report.getLongitude());
             gasStationService.saveOrUpdate(gasstation);
             return gasstation;
         }).collect(Collectors.toList());
     }
-
 
     @Override
     public List<GasStation> listRstation(Double Radis, Double latitude, Double longitude) {

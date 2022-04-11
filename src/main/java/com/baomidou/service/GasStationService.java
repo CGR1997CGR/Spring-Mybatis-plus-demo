@@ -15,7 +15,7 @@ import java.util.List;
  */
 public interface GasStationService extends IService<GasStation> {
 
-    List<GasStation> listRstation(Double Radis, Double latitude, Double longitude);
-
     void updateStation();
+
+    List<GasStation> listRstation(Double Radis, Double latitude, Double longitude);
 }

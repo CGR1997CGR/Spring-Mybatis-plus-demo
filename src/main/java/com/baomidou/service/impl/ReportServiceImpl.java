@@ -39,8 +39,6 @@ public class ReportServiceImpl extends ServiceImpl<ReportMapper, Report> impleme
             report1.setCleannessLevel(report.getCleannessLevel());
             report1.setCourtesyLevel(report.getCourtesyLevel());
             report1.setWaitingTime(report.getWaitingTime());
-            report1.setLatitude(report.getLatitude());
-            report1.setLongitude(report.getLongitude());
             baseMapper.insert(report1);
         }else{
             baseMapper.insert(report);

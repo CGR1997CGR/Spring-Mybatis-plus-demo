@@ -13,7 +13,7 @@ import lombok.EqualsAndHashCode;
  * </p>
  *
  * @author zhangyuexin
- * @since 2022-04-11
+ * @since 2022-04-09
  */
 @Data
 @EqualsAndHashCode(callSuper = false)
@@ -43,10 +43,6 @@ public class Report implements Serializable {
     private String waitingTime;
 
     private Date createTime;
-
-    private Double latitude;
-
-    private Double longitude;
 
 
 }
